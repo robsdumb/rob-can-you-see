@@ -1,0 +1,54 @@
+package Unit;
+
+import java.awt.*;
+import java.util.ArrayList;
+
+import Attributes.Attributes;
+
+/**
+ * Created by standbye on 12/19/2014.
+ */
+public class Unit {
+
+    private Point cur;
+    private ArrayList atts;
+    private int move;
+    private int health;
+    private int dmg;
+
+    public Unit(Point cur, ArrayList atts, int move, int health, int dmg) {
+        this.cur = cur;
+        this.atts = atts;
+        this.move = move;
+        this.health = health;
+        this.dmg = dmg;
+    }
+
+    public Point getCur() {
+        return cur;
+    }
+
+    public void setCur(Point cur) {
+        this.cur = cur;
+    }
+
+    public ArrayList getAtts() {
+        return atts;
+    }
+
+    public int getMove() {
+        return move;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public int getDmg() {
+        return dmg;
+    }
+}
