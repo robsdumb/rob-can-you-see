@@ -1,0 +1,74 @@
+package Tile;
+
+import java.awt.*;
+import java.util.ArrayList;
+
+import Attributes.Attributes;
+
+/**
+ * Created by standbye on 12/19/2014.
+ */
+public class Tile {
+
+    private Point coords;
+    private int cost;
+    private int totalCost;
+    private int defence;
+    private ArrayList atts;
+
+    private Attributes attributes = new Attributes();
+
+    public Tile() {}
+
+    public Tile(Point coords, int cost, int totalcost, int defence, private ArrayList atts;) {
+        this.coords = coords;
+        this.cost = cost;
+        this.totalCost = totalcost;
+        this.defence = defence;
+        this.atts = atts;
+    }
+
+    public Point getCoords() {
+        return coords;
+    }
+
+    public void setCoords(Point coords) {
+        this.coords = coords;
+    }
+
+    public int getCost() {
+        return cost;
+    }
+
+    public int getTotalCost() {
+        return totalCost;
+    }
+
+    public void setTotalCost(int totalCost) {
+        this.totalCost = totalCost;
+    }
+
+    public int getDefence() {
+        return defence;
+    }
+
+    public ArrayList getAtts() {
+        return atts;
+    }
+}
+
+class Plains extends Tile {
+
+    public Plains(Point coords) {
+        super(coords, 1, 0, 0, attributes.getPossible_atts()[1]);
+    }
+
+}
+
+class Water extends Tile {
+
+    public Water(Point coords) {
+        super(coords, 1, 0, 0);
+    }
+
+}
