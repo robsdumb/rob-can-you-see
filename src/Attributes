@@ -1,0 +1,15 @@
+package Attributes;
+
+/**
+ * Created by standbye on 12/19/2014.
+ */
+public class Attributes {
+
+    public Attributes() {}
+
+    private final String[] possible_atts = new String[]{"land", "air", "water"};
+
+    public String[] getPossible_atts() {
+        return possible_atts;
+    }
+}
